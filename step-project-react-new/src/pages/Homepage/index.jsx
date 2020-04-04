@@ -4,7 +4,7 @@ import {Container} from '../../commons'
 export const Homepage=()=>{
     return (
         <Container>
-            <h1>Homepage</h1>
+            <h1>Notes</h1>
             <NotesList />
            
         </Container>

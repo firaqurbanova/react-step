@@ -14,10 +14,6 @@ function App() {
           <Route exact path="/" component={Homepage} />
           <Route path="/archive" component={Archive} />
           <Route path="/create" component={Create} />
-          
-          
-          
-          
         </Switch>
       </Router>
     </div>

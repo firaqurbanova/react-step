@@ -51,7 +51,7 @@ export const NoteForm = () => {
     }
     if (validation) {
       onSuccessSubmit({
-        // id: Date.now(),        
+              
         ...fields
       });
     }
@@ -65,11 +65,7 @@ export const NoteForm = () => {
         value={fields.title}
         onChange={onChange}
       />
-      {/* <input style={{display:"none"}}
-        type="text"
-        name="isArchived"
-        value={fields.isArchive} 
-      /> */}
+      
       <Textarea
         type="text"
         name="text"
@@ -79,42 +75,42 @@ export const NoteForm = () => {
 
       <ColorContainer>
         <h4>Color: </h4>
-        <RadioLabel color="#d32727">
+        <RadioLabel color="#37F7BA">
           <input
             type="radio"
             name="color"
-            value="#d32727"
-            checked={fields.color === "#d32727"}
+            value="#37F7BA"
+            checked={fields.color === "#37F7BA"}
             onChange={onChange}
           />
           <span></span>
         </RadioLabel>
-        <RadioLabel color="#3a2c84">
+        <RadioLabel color="#A0F737">
           <input
             type="radio"
             name="color"
-            value="#3a2c84"
-            checked={fields.color === "#3a2c84"}
+            value="#A0F737"
+            checked={fields.color === "#A0F737"}
             onChange={onChange}
           />
           <span></span>
         </RadioLabel>
-        <RadioLabel color="#ef8e0b">
+        <RadioLabel color="#F73780">
           <input
             type="radio"
             name="color"
-            value="#ef8e0b"
-            checked={fields.color === "#ef8e0b"}
+            value="#F73780"
+            checked={fields.color === "#F73780"}
             onChange={onChange}
           />
           <span></span>
         </RadioLabel>
-        <RadioLabel color="#516f55">
+        <RadioLabel color="#B437F7">
           <input
             type="radio"
             name="color"
-            value="#516f55"
-            checked={fields.color === "#516f55"}
+            value="#B437F7"
+            checked={fields.color === "#B437F7"}
             onChange={onChange}
           />
           <span></span>
@@ -187,6 +183,8 @@ const Submit = styled.button`
   ${inputStyles};
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #d32727;
+  background-color: #CE97D8;
   color: white;
+  cursor: pointer;
+  border:none;
 `;

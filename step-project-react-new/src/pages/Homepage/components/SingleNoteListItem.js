@@ -27,7 +27,7 @@ const NoteContainer = styled(Link)`
 `;
 const NoteHeader = styled.div`
   padding: 5px 0;
-  b
+  
 `;
 const Title = styled.div`
   font-size: 20px;
