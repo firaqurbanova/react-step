@@ -6,7 +6,7 @@ export const Header=()=>{
     return(
         <Container>
         
-            <Apptext>NotesApp</Apptext>
+        <Apptext>NotesApp</Apptext>
         <div>
         <StyledNavLink exact to="/">Actual</StyledNavLink>
         <StyledNavLink to="/archive">Archive</StyledNavLink>
@@ -18,11 +18,8 @@ export const Header=()=>{
 
 
 const Container=styled.header`
-background-image: url(${img});   
-background-size: cover;
-/* width:200px;
-height:200px; */
- /* background:pink; */
+    background-image: url(${img});   
+    background-size: cover;
     min-width:1200px;
     padding:20px 50px;
     display: flex;
