@@ -3,6 +3,7 @@ import React from 'react';
 import {Homepage,Archive} from "./pages"
 import {BrowserRouter as Router , Switch, Route} from "react-router-dom"
 import {Header} from "./commons"
+import {SingleNote}from "./pages"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           
           
           <Route exact path="/archive" component={Archive} />
+          <Route exact path="/note/:id" component={SingleNote} />
           
         </Switch>
       </Router>
