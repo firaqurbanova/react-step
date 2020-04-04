@@ -5,14 +5,14 @@
         "title": "lorem",
         "text": "hello world",
         "color":"pink",
-        "isArchive": "true"
+        "isArchive": "false"
     },
     {
         "id": 2, 
         "title": "yes",
         "text": "hello",
         "color":"grey",
-        "isArchive": "false"
+        "isArchive": "true"
 
     },
     {
@@ -20,7 +20,7 @@
         "title": "no",
         "text": "world",
         "color":"red",
-        "isArchive": "true"
+        "isArchive": "false"
 
     }
        
