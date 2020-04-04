@@ -23,10 +23,11 @@ const NoteContainer = styled(Link)`
   display: flex;
   flex-wrap: wrap;
   text-decoration: none;
+ 
 `;
 const NoteHeader = styled.div`
   padding: 5px 0;
-  border-bottom: 1px solid white;
+  b
 `;
 const Title = styled.div`
   font-size: 20px;
