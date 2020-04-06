@@ -9,7 +9,7 @@ function fetchFabric(endpoint, method) {
     };
 
     let getParams = "";
-    // Delete
+    
     if (method == "DELETE") {
       getParams += `/`;
       for (let key in params) {
@@ -17,7 +17,7 @@ function fetchFabric(endpoint, method) {
       }
       options.method = method;
     } 
-    // Update
+   
     else if (method == "PATCH") {
       getParams += `/`;
       for (let key in params) {

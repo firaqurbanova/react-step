@@ -2,24 +2,24 @@
   "notes": [
     {
       "id": 1,
-      "title": "lorem",
-      "text": "hello world",
-      "color": "pink",
+      "title": "Note Title",
+      "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+      "color": "#557A95",
       "isArchive": "false"
     },
     {
-      "id": 2,
-      "title": "yes",
-      "text": "hello",
-      "color": "grey",
-      "isArchive": "true"
+      "title": "Note Title",
+      "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+      "isArchive": "true",
+      "color": "#6F948D",
+      "id": 2
     },
     {
-      "id": 3,
-      "title": "no",
-      "text": "world",
-      "color": "red",
-      "isArchive": "false"
+      "title": "Note Title",
+      "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+      "isArchive": "false",
+      "color": "#B1A296",
+      "id": 3
     }
   ]
 }

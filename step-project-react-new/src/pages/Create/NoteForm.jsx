@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Redirect } from 'react-router-dom';
-
 
 export const NoteForm = () => {
     const createNote = async ({title, text,color,isArchive}) => { {
@@ -13,16 +11,13 @@ export const NoteForm = () => {
             },
             body: JSON.stringify({ ...fields, title, text,color,isArchive})
           });
-          const answer = await res.json();
-          
-          
-          }
+             }
       };
   const [fields, setFields] = useState({
     title: "",
     text: "",
     isArchive: "false",
-    color: "#d32727"
+    color: "#5D5C61"
   });
 
    const onSuccessSubmit =(fields)=>{
@@ -33,14 +28,14 @@ export const NoteForm = () => {
 
   const onChange = e => {
     const { name, value } = e.target;
-    setFields(field => ({
-      ...field,
+    setFields(fields => ({
+      ...fields,
       [name]: value
     }));
   };
 
   const onSubmit = e => {
-      console.log(fields);
+      // console.log(fields);
     e.preventDefault();
     let validation = true;
     for (let key in fields) {
@@ -75,42 +70,42 @@ export const NoteForm = () => {
 
       <ColorContainer>
         <h4>Color: </h4>
-        <RadioLabel color="#37F7BA">
+        <RadioLabel color="#6F948D">
           <input
             type="radio"
             name="color"
-            value="#37F7BA"
-            checked={fields.color === "#37F7BA"}
+            value="#6F948D"
+            checked={fields.color === "#6F948D"}
             onChange={onChange}
           />
           <span></span>
         </RadioLabel>
-        <RadioLabel color="#A0F737">
+        <RadioLabel color="#7395AE">
           <input
             type="radio"
             name="color"
-            value="#A0F737"
-            checked={fields.color === "#A0F737"}
+            value="#7395AE"
+            checked={fields.color === "#7395AE"}
             onChange={onChange}
           />
           <span></span>
         </RadioLabel>
-        <RadioLabel color="#F73780">
+        <RadioLabel color="#557A95">
           <input
             type="radio"
             name="color"
-            value="#F73780"
-            checked={fields.color === "#F73780"}
+            value="#557A95"
+            checked={fields.color === "#557A95"}
             onChange={onChange}
           />
           <span></span>
         </RadioLabel>
-        <RadioLabel color="#B437F7">
+        <RadioLabel color="#B1A296">
           <input
             type="radio"
             name="color"
-            value="#B437F7"
-            checked={fields.color === "#B437F7"}
+            value="#B1A296"
+            checked={fields.color === "#B1A296"}
             onChange={onChange}
           />
           <span></span>
@@ -126,7 +121,6 @@ const Form = styled.form`
   margin: 30px auto;
   padding: 30px 20px;
   background-color: #e4e9ef;
-  border-radius: 15px;
 `;
 
 const inputStyles = `
@@ -183,7 +177,7 @@ const Submit = styled.button`
   ${inputStyles};
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #CE97D8;
+  background-color: #557A95;
   color: white;
   cursor: pointer;
   border:none;

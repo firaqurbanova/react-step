@@ -4,35 +4,38 @@ import { Link } from "react-router-dom";
 
 export const SingleNoteListItem = ( { id, title, text, color, isArchive}) => {
   return (
-    <NoteContainer to={`/note/${id}`} color={color} id={id} key={id}>
+    
+    <NoteContainer to={`/note/${id}`} color={color} key={id}>
       <NoteHeader>
         <Title>{title}</Title>
         <Text>{text}</Text>
       </NoteHeader>
     </NoteContainer>
+    
   );
 };
 
 const NoteContainer = styled(Link)`
-  width: calc((100%-60px) / 3);
+  width: calc((100%-60px) / 4);
   margin: 0 10px 20px;
   background-color: ${(p) => p.color};
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   color: white;
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
   text-decoration: none;
  
 `;
 const NoteHeader = styled.div`
-  padding: 5px 0;
+  text-align: center;
   
 `;
 const Title = styled.div`
   font-size: 20px;
   font-weight: bold;
+  
 `;
 const Text = styled.p`
-  text-align: center;
+  font-size:15px;
 `;
+

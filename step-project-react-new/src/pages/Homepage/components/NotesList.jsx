@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { getNotes } from "../../../API";
 import { SingleNoteListItem } from "./SingleNoteListItem";
+import styled from "styled-components"
 
 export const NotesList = () => {
   const [notes, setNotes] = useState([]);
@@ -13,7 +14,7 @@ export const NotesList = () => {
     })();
   }, []);
   return (
-    <div>
+    <List>
       {notes.map(({ id, title, text, color, isArchive }) => (
         <SingleNoteListItem
           key={id}
@@ -24,6 +25,10 @@ export const NotesList = () => {
           isArchive={isArchive}
         />
       ))}
-    </div>
+    </List>
   );
 };
+
+ const List=styled.div`
+    margin-left: -15px;
+  `;

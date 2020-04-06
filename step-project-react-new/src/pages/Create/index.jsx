@@ -6,8 +6,7 @@ export const Create = ()=>{
     return(
         <Container >
             <h1>Create</h1>
-           
-            <NoteForm />
+                <NoteForm />
         </Container>
     )
 };
